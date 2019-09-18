@@ -1,0 +1,24 @@
+{% set metaTitle = site[locale].metaTitle %}
+{% set metaDescription = site[locale].metaDescription %}
+{% set includeLocale = site[locale].locale %}
+
+<!doctype html>
+<html lang="{{locale}}">
+<head>
+    <meta charset="utf-8" />
+    <title>{{ title }} - {{ metaTitle }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  {% include "../_includes/" + includeLocale + "-header.njk" %}
+  <main class="container" id="main">
+    {% include "../_includes/homepage-banner.njk" %}
+    <article class="page-content">
+      {{ content | safe }}
+    </article>
+  </main>
+  {% include "../_includes/footer.njk" %}
+</body>
+<script type="text/javascript" src="/assets/js/all.js"></script>
+</html>

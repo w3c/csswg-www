@@ -1,0 +1,25 @@
+.news {
+    background-color: var(--color-theme-weak);
+    color: var(--color-text);
+    padding: 1rem;
+}
+
+.news ul {
+    @include nobull;
+}
+
+.news li {
+    border-bottom: 1px solid var(--color-theme-strong);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.news li:last-child {
+    border-bottom: none;
+}
+
+.news .singledate {
+    order: 2;
+    margin: 0 0 0 20px;
+}

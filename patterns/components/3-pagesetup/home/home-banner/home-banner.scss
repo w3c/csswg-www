@@ -1,0 +1,80 @@
+.banner {
+    color: var(--true-white);
+    @media (min-width: 50em) {
+        grid-column: 2 ;
+    }
+    @media (min-width: 40em) {
+        padding: 1rem 3rem 1rem 0;
+        display: grid;
+        grid-template-columns: 20px 1fr 2fr 20px; 
+        column-gap: 20px;
+    }
+    background-color: var(--color-theme-strong);
+    
+    background-image:
+        radial-gradient(circle closest-corner at 55% 5%,
+                         hsla(8, 52%, 68%, 0) 0%,
+                         hsla(8, 52%, 68%, 0.15) 20%,
+                         transparent 20%),
+        radial-gradient(circle closest-corner at 55% 105%,
+                         hsla(8, 52%, 68%, 0) 0%,
+                         hsla(8, 52%, 68%, 0.15) 20%,
+                         transparent 20%),
+        radial-gradient(circle closest-corner at 30% 30%,
+                         hsla(340, 30%, 24%, 0) 0%,
+                         hsla(340, 10%, 44%, 0.4) 40%,
+                         transparent 40%),
+        radial-gradient(circle closest-corner at 130% 30%,
+                         hsla(340, 30%, 24%, 0) 0%,
+                         hsla(340, 10%, 44%, 0.4) 40%,
+                         transparent 40%),
+        radial-gradient(circle closest-corner at -10% 50%,
+                         hsla(205, 97%, 31%, 0) 0%,
+                         hsla(205, 97%, 31%, 0.15) 80%,
+                         transparent 80%),
+        radial-gradient(circle closest-corner at 90% 50%,
+                         hsla(205, 97%, 31%, 0) 0%,
+                         hsla(205, 97%, 31%, 0.15) 80%,
+                         transparent 80%),
+        radial-gradient(circle closest-corner at 50% 65%,
+                         hsla(225, 63%, 27%, 0) 0%,
+                         hsla(225, 63%, 27%, 0.15) 40%,
+                         transparent 40%);
+    background-size: 20em 14em;
+    background-repeat: repeat;
+    border-top: 1px solid #2F4054; /* hsl(212, 44%, 33%) */
+    border-bottom: 1px solid hsl(212, 64%, 8%);
+    margin-bottom: 1.5em;
+    box-shadow: inset 0 -0.5em 2em #0F2238; /* hsl(212, 72%, 22%) */
+}
+
+.banner .quicklinks {
+    grid-column: 1 / 3;
+    @media (min-width: 50em) {
+        margin-left: -10px;
+    }
+}
+
+.banner h1,
+.banner h2,
+.banner h3 {
+    color: #fff;
+    @include heading('h1');
+    margin: 1rem 0;
+    text-transform: inherit;
+    font-weight: 500;
+}
+
+
+
+.banner-content {
+    font-size: 1.5rem;
+    font-family: "League Spartan Variable", "Helvetica Neue", Helvetica, Arial, Verdana, Geneva, sans-serif;
+    line-height: 1.4;
+}
+
+@media(max-width: 40em) {
+    .banner-content {
+        margin: 0 10px;
+    }
+}

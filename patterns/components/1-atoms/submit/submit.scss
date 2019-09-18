@@ -1,0 +1,10 @@
+.button,
+input[type="submit"] {
+    background-color: var(--color-theme-strong);
+    color: var(--true-white);
+    border: 1px solid var(--off-black);
+    border-radius: .2rem;
+    font-size: inherit;
+    padding: .2em .5em;
+    width: min-content;
+}

@@ -1,0 +1,24 @@
+{
+	"title": "Box",
+    "status": "ready",
+	"context": {
+		"modifier": "default",
+		"message": "This is the default box"
+	},
+	"variants": [
+		{
+			"name": "warning",
+            "context": {
+        	    "modifier": "warn",
+                "message": "This is a warning box"
+        	}
+		},
+		{
+			"name": "note",
+            "context": {
+        	    "modifier": "note",
+                "message": "This is a note box"
+        	}
+		}
+	]
+}

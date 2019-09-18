@@ -1,0 +1,17 @@
+.singledate {
+    border: 1px solid var(--color-theme);
+    padding: .2rem .5rem;
+    font-size: .8rem;
+    color: var(--true-white);
+    width: 5em;
+    width: min-content;
+    text-align: center;
+    line-height: 1.4;
+    background-color: var(--color-theme-strong);
+    font-family: "League Spartan Variable", "Helvetica Neue", Helvetica, Arial, Verdana, Geneva, sans-serif;
+}
+
+.singledate .day {
+    font-weight: bold;
+    font-size: 1.5rem;
+}

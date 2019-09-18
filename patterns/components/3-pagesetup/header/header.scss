@@ -1,0 +1,151 @@
+.local-bar {
+    background-color: var(--color-neutral);
+    padding: 0 .5rem;
+}
+
+.local-bar ul {
+    @include nobull;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.local-bar a:link,
+.local-bar a:visited {
+    color: var(--true-white);
+    font-size: .8rem;
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu > ul { 
+    display: none; 
+}
+
+.has-submenu:hover ul,
+.has-submenu.open ul { 
+    display: block;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-neutral);
+    position: absolute;
+    top: 2.2rem;
+    right: 0;
+    width: 5em;
+    padding: .5em;
+    width: max-content;
+    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.75);
+}
+
+.has-submenu.open ul a {
+    color: var(--color-neutral);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.global-header {
+    border-top: 4px solid var(--true-white);
+    border-bottom: 4px solid var(--true-white);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    @media (min-width: 50em) {
+        grid-template-columns: 10vw 1fr;
+    }
+    align-items: center;
+    background-color: var(--color-theme);
+    color: var(--true-white);
+    padding: 1rem 0;
+}
+
+
+.global-header > * {
+    margin: 0 .5rem 0 0;
+}
+
+a.w3c:link,
+a.w3c:visited {
+    color: var(--true-white);
+    place-self: center;
+}
+
+a.w3c svg {
+    color: inherit;
+    fill: currentColor;
+}
+
+.global-header .css {
+    font-family: "League Spartan Variable", "Helvetica Neue", Helvetica, Arial, Verdana, Geneva, sans-serif;
+    line-height: 1;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    border-left: 1px solid var(--off-white);
+}
+
+
+
+.global-header .w3c {
+    background-color: var(--color-theme);
+    padding: 0 .5rem;
+}
+
+.header .main-nav {
+    border-top: 1px solid var(--color-neutral-inverse);
+    border-bottom: 5px solid var(--color-theme);
+    margin-bottom: 20px;
+    background-color: var(--color-background);
+    padding: .5em 0;
+    display: grid;
+    justify-items: center;
+    @media (min-width: 50em) {
+        grid-template-columns: 10vw 1fr 15em;
+        justify-items: start;
+    }
+    align-items: center;  
+}
+
+.header .main-nav ul {
+    @include nobull;
+    margin-bottom: 1rem;
+    justify-content: center;
+    @media (min-width: 50em) {
+        margin-bottom: 0;
+        grid-column: 2;
+        justify-content: start;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -.6em;
+    
+}
+
+.header .main-nav a {
+    display: block;
+    padding: .4em .6em ;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-theme-dark);
+}
+
+.header .main-nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+form.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form.search input[type="search"] {
+    width: 60%;
+    margin-right: .2rem;
+    @media (min-width: 50em) {
+        width: 10rem;
+    }
+}

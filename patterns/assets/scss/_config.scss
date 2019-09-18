@@ -1,0 +1,53 @@
+/* CSS setup here, this file gets included via Sass in styles.scss. Mostly all the custom properties that will then end up in the main stylesheet plus a few mixins used in the components. */
+
+:root {
+    --color-background: rgb(255,255,255);
+    --color-text: rgb(29,29,29);
+    --color-theme: rgb(0,90,156);
+    --color-theme-strong: rgb(0,51,102);
+    --color-theme-weak: rgb(193,210,231);
+    --color-neutral: rgb(68,68,68);
+    --color-neutral-inverse: rgb(251,251,251);
+    --color-highlight: rgb(0,90,156);
+    --color-warn: red;
+
+    --off-black: #1d1d1d;
+    --true-black: #000000;
+    --off-white: #fbfbfb;
+    --true-white: #ffffff;
+
+    --default-font: "Helvetica Neue", Helvetica, Arial, Verdana, Geneva, sans-serif;
+    --special-font: "League Spartan Variable", "Helvetica Neue", Helvetica, Arial, Verdana, Geneva, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: rgb(29,29,29);
+        --color-text: rgb(251,251,251);
+        --color-theme: rgb(70,70,70);
+        --color-theme-strong: rgb(41,41,41);
+        --color-theme-weak: rgb(0,0,0);
+        --color-neutral: rgb(68,68,68);
+        --color-neutral-inverse: rgb(251,251,251);
+        --color-highlight: rgb(123,186,186);
+    }
+}
+
+/* for headings and anything that needs to look like a heading but isn't actually a heading. */
+$font-size: (
+    "h1": 2rem,
+    "h2": 1.5rem,
+    "h3": 1.2rem
+);
+@mixin heading($level) {
+    font-family: var(--special-font);
+    line-height: 1;
+    font-size: map-get($font-size,$level);
+}
+
+/* gets rid of listy stuff */
+@mixin nobull() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

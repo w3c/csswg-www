@@ -1,0 +1,14 @@
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.125em 0.5em 0.25em 0.5em;
+  line-height: 1;
+}
+
+caption {
+  @include heading(h2);
+}
+

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'League Spartan Variable';
+  src: url('../fonts/LeagueSpartanVariable.woff2') format('woff2-variations'); 
+  font-weight: 200 900;
+}
+
+@import "_config.scss";
+@import "../../components/**/*.scss";
+
+
+html {
+  font-family: var(--default-font);
+  font-size: 100%;
+  line-height: 1.4;
+  min-height: 100%;
+  color: var(--color-text);
+  background: var(--color-background);
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header, main, footer - to make the footer stick to the bottom on short pages. */
+  min-height: 100vh;
+}
+
+section,
+.section {
+  margin: 0 2% 3em;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+caption {
+  font-family: var(--special-font);
+}
+
+h2,
+h3 {
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-weight: 700;
+  line-height: 1;
+}
+
+p,
+ul,
+ol,
+pre {
+  margin: 0 0 1.5em 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0.4em 0 0.2em;
+}
+
+a:link, a:visited {
+  color: var(--color-highlight);
+}

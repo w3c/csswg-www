@@ -1,0 +1,14 @@
+.site-footer {
+    background-color: var(--color-neutral); 
+    color: var(--color-neutral-inverse);
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    @media (min-width: 50em) {
+        grid-template-columns: 10vw 1fr 10vw;
+    }
+    padding: 1rem 0;
+}
+
+.site-footer > * {
+    grid-column: 2;
+}

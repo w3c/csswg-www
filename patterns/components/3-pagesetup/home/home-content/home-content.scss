@@ -1,0 +1,32 @@
+.home-content {
+    grid-column: 2;
+    @media(min-width: 40em){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    @media(min-width: 50em){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.home-content .news {
+    grid-column: -2;
+    grid-row: 1 / 3;
+    align-self: start;
+}
+
+.home-content h2 a {
+    text-decoration: none;
+}
+
+.home-content h2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: .5em;
+}
+
+.home-content h2::after {
+    content: "";
+    border-bottom: 1px dotted var(--color-neutral);
+}
