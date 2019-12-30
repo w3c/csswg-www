@@ -6,11 +6,9 @@ I'm using this README as Rachel's random thoughts right now. Ultimately I'll hav
 
 Check this out and run `npm install`.
 
-Start running 11ty with `npm start` or `yarn start`
+Start running 11ty with `npm start` or `yarn start`. Or to use language negotiation, use `yarn serve` or `npm run serve`. The language negotiation server doesn't watch and run builds so if you change things you need to stop it with Ctrl-C and start it up again to trigger a build.
 
-You should get two webservers running, one is 11ty (the site), one is a pattern library (the CSS broken down into components, uses [Fractal](https://fractal.build/)).
-
-TO see the English homepage you will need to go to /en/ on a server we should just redirect that. Or we could put the en version into the root, it probably doesn't matter. But for now http://localhost:8080/en/ (assuming :8080 is what you get)
+If you want to work on the CSS in the Pattern Library, run `gulp watch patterns`. Any changes ot the CSS will be copied into the 11ty build so next time you run that the new stylesheet will be picked up,
 
 Templating for 11ty and the pattern library is [nunjucks](https://mozilla.github.io/nunjucks/).
 
@@ -32,13 +30,17 @@ I am leaving adding fallbacks for older browsers until we are happy with the way
 
 ## Internationalization 
 
-So we can support multiple translations the pages for the site are located in folders with a two letter language code. I've initially set up `/en/` and `/fr/` just to check it works. It's pretty straightforward to then use the current locale in templates and includes. You can see this happening in `header.njk` where I have separate includes for the two languages. I thought this approach would make it easier to have versions even if we don't have all the content translated. They can have their own nav etc.
+I've hacked in the ability to do content negotation and use 11ty. We need to override the way 11ty would normally make pages so it is important to have all the bits in the header block on each page.
 
-You can include the locale info in templates too and create variables if an include can be more or less the same, but just needs a few words translated.
-
-When creating a new locale it needs a json file with the locale in it in the language folder. Also add the language and locale information to `site.js`. This file is used to make the dropdown. Also the templates then pull in the correct title and so on. We should be able to use this data to make collections of things which are localized as well as translated - conferences, resources etc. so I think that covers all bases.
-
-I'm not set on that lang-switch dropdown, what we use probably depends on how many translations there are.
+```
+---
+permalink: "/about/what.en.html"
+locale: "en"
+section: "about"
+layout: main.njk
+title: What We Do
+---
+```
 
 ## Markdown
 

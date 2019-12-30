@@ -53,6 +53,7 @@
     grid-template-columns: 120px 1fr;
     @media (min-width: 50em) {
         grid-template-columns: 10vw 1fr;
+        gap: 1em;
     }
     align-items: center;
     background-color: var(--color-theme);
@@ -102,6 +103,7 @@ a.w3c svg {
     justify-items: center;
     @media (min-width: 50em) {
         grid-template-columns: 10vw 1fr 15em;
+        gap: 1em;
         justify-items: start;
     }
     align-items: center;  

@@ -1,7 +1,9 @@
 .container {
+    margin-top: 2em;
     @media (min-width: 50em) {
         display: grid;
-        grid-template-columns: 10vw 1fr 10vw;
+        grid-template-columns: 10vw 2fr 1fr 10vw;
+        gap: 1em;
     }
     background-color: var(--color-background);
 }
