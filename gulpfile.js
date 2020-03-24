@@ -3,7 +3,6 @@ const sass  = require('gulp-sass');
 const fractal = require('./fractal.js');
 const logger = fractal.cli.console;
 const sassGlob = require('gulp-sass-glob');
-const cleanCSS = require('gulp-clean-css');
 const merge = require('merge-stream');
 const concat = require('gulp-concat');
 const terser = require('gulp-terser');
@@ -18,7 +17,6 @@ gulp.task('css', function () {
     return gulp.src('patterns/assets/scss/**/*.scss')
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
-        .pipe(cleanCSS())
         .pipe(gulp.dest('patterns/public/css'));
 
 });
