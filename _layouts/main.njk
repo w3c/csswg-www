@@ -1,6 +1,6 @@
 {% set metaTitle = locale.metaTitle %}
 {% set metaDescription = locale.metaDescription %}
-{% set includeLocale = locale %}
+{% set metaLocale = locale %}
 <!doctype html>
 <html lang="{{locale}}">
 <head>
@@ -10,12 +10,12 @@
     <link href="/assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
-  {% include "../_includes/" + includeLocale + "/header.njk" %}
+  {% include "../_includes/header.njk" %}
   <main class="container" id="main">
     <article class="page-content">
       {{ content | safe }}
     </article>
-    {% include "../_includes/" + includeLocale + "/section-nav-" + section + ".njk" %}
+    {% include "../_includes/section-nav-" + section + ".njk" %}
   </main>
   {% include "../_includes/footer.njk" %}
 </body>

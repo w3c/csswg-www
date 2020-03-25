@@ -45,3 +45,13 @@ title: What We Do
 ## Markdown
 
 You can use Markdown. You can mix Markdown and HTML. The parser is nobbled so you should be able to indent things without creating a code block. If you actually do need code output on the page then you will need to fence it with three backticks.
+
+## Overview of What's What for the Clueless (i.e. people like fantasai)
+
+* `_contents` is where the source content lives
+* `_site` is where the output that gets served lives
+* `_layouts` is where the overall page templates (“layouts”) live
+* `_includes` is where the pieces imported into the layouts live
+	* `l10n` is where the localization files live
+* `patterns` is where the CSS and JS lives
+	* `public` is where built files live
