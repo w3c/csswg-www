@@ -29,7 +29,13 @@ gulp.task('copy-assets', function(){
     let copyJavaScript = gulp.src('patterns/public/js/**/*')
     .pipe(gulp.dest('./_content/assets/js'));
 
-    return merge(copyCSS, copyJavaScript);
+    let copyFonts = gulp.src('patterns/public/fonts/*')
+    .pipe(gulp.dest('./_content/assets/fonts'));
+
+    let copyImages = gulp.src('patterns/public/images/*')
+    .pipe(gulp.dest('./_content/assets/images'));
+
+    return merge(copyCSS, copyJavaScript, copyFonts, copyImages);
 
 });
 
