@@ -41,7 +41,7 @@
     }
 }
 
-/* for headings and anything that needs to look like a heading but isn't actually a heading. */
+// for headings and anything that needs to look like a heading but isn't actually a heading.
 $font-size: (
     "h1": 2rem,
     "h2": 1.5rem,
@@ -53,7 +53,7 @@ $font-size: (
     font-size: map-get($font-size,$level);
 }
 
-/* gets rid of listy stuff */
+// gets rid of listy stuff
 @mixin nobull() {
     margin: 0;
     padding: 0;

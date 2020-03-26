@@ -33,8 +33,6 @@
     --color-neutral-inverse: rgb(251,251,251);
     --color-highlight: rgb(123,186,186); } }
 
-/* for headings and anything that needs to look like a heading but isn't actually a heading. */
-/* gets rid of listy stuff */
 /* components/1-atoms/date.scss */
 .singledate {
   border: 1px solid var(--color-theme);
