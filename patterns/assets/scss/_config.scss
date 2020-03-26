@@ -1,4 +1,12 @@
+/* patterns/assets/scss/_config.scss */
+
 /* CSS setup here, this file gets included via Sass in styles.scss. Mostly all the custom properties that will then end up in the main stylesheet plus a few mixins used in the components. */
+
+@font-face {
+  font-family: 'League Spartan Variable';
+  src: url('../fonts/LeagueSpartanVariable.woff2') format('woff2-variations'); 
+  font-weight: 200 900;
+}
 
 :root {
     --color-background: rgb(255,255,255);

@@ -1,9 +1,10 @@
+/* patterns/assets/scss/_config.scss */
+/* CSS setup here, this file gets included via Sass in styles.scss. Mostly all the custom properties that will then end up in the main stylesheet plus a few mixins used in the components. */
 @font-face {
   font-family: 'League Spartan Variable';
   src: url("../fonts/LeagueSpartanVariable.woff2") format("woff2-variations");
   font-weight: 200 900; }
 
-/* CSS setup here, this file gets included via Sass in styles.scss. Mostly all the custom properties that will then end up in the main stylesheet plus a few mixins used in the components. */
 :root {
   --color-background: rgb(255,255,255);
   --color-text: rgb(29,29,29);
@@ -34,6 +35,7 @@
 
 /* for headings and anything that needs to look like a heading but isn't actually a heading. */
 /* gets rid of listy stuff */
+/* components/1-atoms/date.scss */
 .singledate {
   border: 1px solid var(--color-theme);
   padding: .2rem .5rem;
@@ -50,6 +52,7 @@
   font-weight: bold;
   font-size: 1.5rem; }
 
+/* components/1-atoms/input.scss */
 input[type="text"], input[type="search"], textarea {
   border: 1px solid var(--color-theme);
   border-radius: .2rem;
@@ -57,6 +60,7 @@ input[type="text"], input[type="search"], textarea {
   font-family: inherit;
   padding: .2em .5em; }
 
+/* components/1-atoms/submit.scss */
 .button,
 input[type="submit"] {
   background-color: var(--color-theme-strong);
@@ -67,6 +71,7 @@ input[type="submit"] {
   padding: .2em .5em;
   width: min-content; }
 
+/* components/1-atoms/table.scss */
 table {
   border-collapse: collapse; }
 
@@ -80,6 +85,8 @@ caption {
   line-height: 1;
   font-size: 1.5rem; }
 
+/* components/1-atoms/textarea.scss */
+/* components/2-molecules/box/box.scss */
 .box {
   padding: 1rem; }
 
@@ -95,6 +102,8 @@ caption {
 .box--note {
   border: 4px solid var(--color-highlight); }
 
+/* components/2-molecules/form/form.scss */
+/* components/2-molecules/news/news.scss */
 .news {
   background-color: var(--color-theme-weak);
   color: var(--color-text);
@@ -118,6 +127,7 @@ caption {
   order: 2;
   margin: 0 0 0 20px; }
 
+/* components/2-molecules/quicklinks/quicklinks.scss */
 .quicklinks {
   background: var(--color-neutral);
   background-image: linear-gradient(var(--color-theme-strong), var(--color-theme));
@@ -150,7 +160,10 @@ caption {
   background: var(--color-theme);
   background: linear-gradient(to left, var(--color-theme-strong), rgba(255, 255, 255, 0.2)); }
 
-/* Layout for Specification and Test Suite Status Tables. Needs work, also needs a dark mode. */
+/* components/2-molecules/spec-table/spec-table.scss
+ * Layout for Specification and Test Suite Status Tables.
+ * Needs work, also needs a dark mode.
+ */
 table.status {
   width: 98%; }
 
@@ -519,10 +532,12 @@ td + td + .rec {
   background: #ddd;
   color: black; }
 
+/* components/3-pagesetup/article-content/article-content.scss */
 .page-content {
   grid-column: 2;
   max-width: 50em; }
 
+/* components/3-pagesetup/footer/footer.scss */
 .site-footer {
   background-color: var(--color-neutral);
   color: var(--color-neutral-inverse);
@@ -536,6 +551,7 @@ td + td + .rec {
 .site-footer > * {
   grid-column: 2; }
 
+/* components/3-pagesetup/header/header.scss */
 .local-bar {
   background-color: var(--color-neutral);
   padding: 0 .5rem; }
@@ -745,6 +761,7 @@ form.search input[type="search"] {
   content: "";
   border-bottom: 1px dotted var(--color-neutral); }
 
+/* components/3-pagesetup/main/main.scss */
 .container {
   margin-top: 2em;
   background-color: var(--color-background); }
@@ -754,6 +771,8 @@ form.search input[type="search"] {
       grid-template-columns: 10vw 2fr 1fr 10vw;
       gap: 1em; } }
 
+/* components/3-pagesetup/section-nav/section-nav.scss */
+/* patterns/assets/scss/styles.scss */
 html {
   font-family: var(--default-font);
   font-size: 100%;
