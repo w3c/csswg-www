@@ -35,9 +35,9 @@
     --color-highlight: rgb(123,186,186); } }
 
 /**
- * W3C Pro - Base Typography
+ * CSSWG Website Base
  * design and initial coding by Divya Manian circa 2011
- * CSS aggressively edited by fantasai
+ * (CSS aggressively edited by fantasai)
  */
 /* General Typography */
 html {
@@ -529,29 +529,7 @@ input[type=submit]:active {
   background-image: -webkit-linear-gradient(top, #0C3D5F, #025A9A);
   background-image: linear-gradient(top, #0C3D5F, #025A9A); }
 
-/* Tables and Inline Legends */
-.legend caption {
-  display: block;
-  font-size: 1em;
-  line-height: 1.5;
-  text-transform: uppercase; }
-
-.legend {
-  display: block;
-  text-align: center;
-  line-height: 2; }
-
-.legend tr {
-  display: inline-block;
-  line-height: 1; }
-
-table.legend th {
-  padding: 0.375em 0.5em;
-  display: inline-block; }
-
-table.legend td {
-  margin: 0 2em 0 0;
-  display: inline-block; }
-
-.legend, .legend tbody, .legend tr, .legend th, .legend td {
-  border: none; }
+/**
+ * CSSWG Website Components
+ * by Rachel Andrew
+ */
