@@ -1,0 +1,202 @@
+/**
+ * .qlinks / .banner / .intro Styling
+ * .qlinks is a table of contents
+ * .intro is highlighted introductory content of a page
+ * .banner wraps both into special styling
+ */
+
+/* Local Navigation Styling */
+
+	.qlinks {
+		/* font / line height handled alongside aside in base.scss */
+		background: #1876B9;	
+		background-image:   linear-gradient(hsl(205, 97%, 31%), hsl(205, 77%, 41%));				
+		text-shadow: 1px 1px 1px #1A2F47; /* hsl(212, 64%, 28%) */
+		color: #fff;
+		padding: 1.35em 0;
+		margin: 0 auto 2em;
+		border-radius: 0.5em;
+		box-shadow: 4px 2px 3px #1A2F47; /* hsl(212, 64%, 28%) */ }
+
+	.qlinks h1,
+	.qlinks h2,
+	.qlinks h3 {
+		margin: 0;
+		padding: 0 4%;
+		font-weight: normal;
+		@media screen and (min-width: 45em) {
+			padding: 0 6%;
+		}
+	}
+
+	.qlinks ul,
+	.qlinks ol {
+		padding: 0 4%;
+		margin: 0; }
+	.qlinks ul {
+		list-style-type: none; }
+	.qlinks ol {
+		list-style-position: inside; }
+	.qlinks ol > li,
+	.qlinks ul > li {
+		border-top: 1px solid #08395E; /* hsl(205, 91%, 18%) */ }
+
+	.qlinks a[href] {
+		color: inherit;
+		display: block;
+		text-decoration: none;
+		line-height: 1; }
+
+	.qlinks li > a[href] {
+		padding: 0.6em 5%;
+		border-top: 1px solid #5E85A1; /* hsl(205, 41%, 50%) */ }
+
+	.qlinks li:first-child, .qlinks li:first-child a,
+	.qlinks li:hover, .qlinks li:hover a,
+	.qlinks li:hover + li, .qlinks li:hover + li a {
+		border-top: 1px solid transparent; }
+	.qlinks a:hover,
+	.qlinks a:focus {
+		margin-left: -2%;
+		background: #014A7D; /* hsl(205, 99%, 49%) */				
+		background: linear-gradient(to right,
+		                            hsl(205, 99%, 49%),
+		                            hsla(300, 99%, 99%, 0))
+		            no-repeat; }
+	// duplicate rules so down-level clients don't invalidate everything
+	.qlinks li:focus-within, .qlinks li:focus-within a,
+	.qlinks li:focus-within + li, .qlinks li:focus-within + li a {
+		border-top: 1px solid transparent; }
+
+@media screen and (min-width: 45em) {
+	/* Wrap around left edge */
+	.banner > .qlinks {
+		margin: 0.675em 0 2.35em -0.25em;
+		padding-top: 0.675em;
+		border-left: 1px solid #1C334D; /* hsl(212, 64%, 30%) */
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0; }
+	.banner > .qlinks ul,
+	.banner > .qlinks ol {
+		padding: 0 6% 0 2%; }
+
+	/* Wrap around right edge */
+	:not(.banner) > .qlinks {
+		margin: 0.675em -1.25rem 2.35em 0;
+		padding-top: 0.675em;
+		border-right: 1px solid #1C334D; /* hsl(212, 64%, 30%) */
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0; }
+	:not(.banner) > .qlinks ul,
+	:not(.banner) > .qlinks ol,
+	:not(.banner) > .qlinks h1 {
+		padding: 0 2% 0 6%; }
+
+	:not(.banner) > .qlinks a:hover,
+	:not(.banner) > .qlinks a:focus {
+		margin-right: -2%;
+		background: #014A7D; /* hsl(205, 99%, 49%) */				
+		background: linear-gradient(to left,
+		                            hsl(205, 99%, 49%),
+		                            hsla(300, 99%, 99%, 0))
+		            no-repeat; }
+}
+
+/* Banner Styling */
+
+@media screen and (min-width: 45em) {
+	.banner {
+		margin: 0 -1rem;
+		background: #1F436D; /* hsl(212, 72, 43) */
+		background-image:
+			radial-gradient(circle closest-corner at 55% 5%,
+			                hsla(8, 52%, 68%, 0) 0%,
+			                hsla(8, 52%, 68%, 0.15) 20%,
+			                transparent 20%),
+			radial-gradient(circle closest-corner at 55% 105%,
+			                hsla(8, 52%, 68%, 0) 0%,
+			                hsla(8, 52%, 68%, 0.15) 20%,
+			                transparent 20%),
+			radial-gradient(circle closest-corner at 30% 30%,
+			                hsla(340, 30%, 24%, 0) 0%,
+			                hsla(340, 10%, 44%, 0.4) 40%,
+			                transparent 40%),
+			radial-gradient(circle closest-corner at 130% 30%,
+			                hsla(340, 30%, 24%, 0) 0%,
+			                hsla(340, 10%, 44%, 0.4) 40%,
+			                transparent 40%),
+			radial-gradient(circle closest-corner at 10% 50%,
+			                hsla(205, 97%, 31%, 0) 0%,
+			                hsla(205, 97%, 31%, 0.15) 80%,
+			                transparent 80%),
+			radial-gradient(circle closest-corner at 90% 50%,
+			                hsla(205, 97%, 31%, 0) 0%,
+			                hsla(205, 97%, 31%, 0.15) 80%,
+			                transparent 80%),
+			radial-gradient(circle closest-corner at 50% 65%,
+			                hsla(225, 63%, 27%, 0) 0%,
+			                hsla(225, 63%, 27%, 0.15) 40%,
+			                transparent 40%);
+		background-size: 20em 14em;
+		background-repeat: repeat;
+		border-top: 1px solid #2F4054; /* hsl(212, 44%, 33%) */
+		border-bottom: 1px solid hsl(212, 64%, 8%);
+		xpadding-top: 1.5em;
+		margin-bottom: 1.5em;
+		box-shadow: inset 0 -0.5em 2em #0F2238; /* hsl(212, 72%, 22%) */ }
+	.banner h1, .banner h2, .banner h3 {
+		font-weight: normal; }
+}
+
+/* Banner Layout */
+
+.banner {
+	clear: both; }
+
+@media screen and (min-width: 45em) {
+	.banner {
+		display: flex; }
+	.banner > .intro > h1:first-child,
+	.banner > .intro > h2:first-child {
+		margin: 0.67em 0; }
+
+	.banner > .qlinks {
+		width: 40%;
+		float: left;
+		order: -1;
+		align-self: start; }
+
+	.banner > .intro {
+		float: right;
+		width: 56%;
+		margin: 0 2%;
+		color: #fff;
+		text-shadow: 0 1px 1px #000; }
+	.intro p {
+		color: #eee; }
+	.intro a[href] {
+		color: #85C3FF; }
+}
+
+@media screen and (min-width: 60em) {
+	/* More space -> 3 column layout */
+	.banner > .qlinks {
+		width: 30%; }
+	.banner > .intro {
+		width: 66%; }
+}
+
+/* Section Navigation Side-by-Side Layout */
+
+@media screen and (min-width: 45em) {
+	main.section {
+		display: flex; }
+
+	article.page {
+		flex: 1; }
+
+	nav.section {
+		float: right;
+		width: 15em;
+		align-self: baseline; }
+}

@@ -6,20 +6,29 @@ layout: home.njk
 title: The CSS Working Group
 ---
 
-<div class="banner">
-    <nav class="quicklinks">
-        <h3>Our work</h3>
-        <ul>
-            <li><a href="">What we will link to</a></li>
-            <li><a href="">here I do not know</a></li>
-            <li><a href="">but I built it anyway</a></li>
-        </ul>
-    </nav>
-    <div class="banner-content">
-        <h1>The CSS Working Group</h1>
+<section class="banner">
+  <div class="intro">
+    <h1>What is CSS?</h1>
+    <p><dfn>Cascading Style Sheets</dfn> (CSS) is a simple mechanism for
+      adding style (e.g. fonts, colors, spacing) to Web documents.
+      <a href="learn">Learn more about CSS</a> and how to use it for
+      your website.</p>
+    <p>The <a href="about">CSS Working Group</a> is responsible for
+      maintaining the <a href="Specs">CSS standards</a>
+      and developing the future of CSS.
+      On our website you can find out about how CSS is designed,
+      keep up to date with our work,
+      and find out how to contribute to CSS yourself.
+  </div>
+  <nav class="qlinks">
+    <h2>The Specifications</h2>
+    <ul>
+      <li><a href="Specs">Overview</a></li>
+      <li><a href="http://www.w3.org/TR/CSS2/">CSS Level 2</a></li>
+      <li><a href="http://www.w3.org/TR/CSS/">CSS Level 3</a></li>
+      <li><a href="http://www.w3.org/Style/CSS/current-work">Current Work</a></li>
+    </ul>
+  </nav>
+</section>
 
-        <p>The CSS Working Group is responsible for maintaining the CSS standards and developing the future of CSS. On our website you can find out about how CSS is designed, keep up to date with our work, and find out how to contribute to CSS yourself.</p>
-    </div>
-</div>
-
-This is the FR homepage.
+This is the FR homepage. It is modeled on a <a href="http://csswg.inkedblade.net/staging/redesign/divya/">2011 design by Divya Manian</a>.

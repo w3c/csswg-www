@@ -8,15 +8,17 @@
     <title>{{ title }} - {{ metaTitle }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="/assets/css/styles.css" rel="stylesheet">
-</head>
+
 <body>
-  {% include "../_includes/header.njk" %}
-  <main class="container" id="main">
-    <article class="page-content">
-      {{ content | safe }}
-    </article>
-  </main>
-  {% include "../_includes/footer.njk" %}
-</body>
+  {% include "../_includes/top.njk" %}
+  <div class="page">
+    {% include "../_includes/header.njk" %}
+    <main id="main">
+      <article class="page">
+        {{ content | safe }}
+      </article>
+    </main>
+    {% include "../_includes/footer.njk" %}
+  </div>
+  {% include "../_includes/translations.njk" %}
 <script type="text/javascript" src="/assets/js/all.js"></script>
-</html>

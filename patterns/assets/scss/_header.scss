@@ -1,0 +1,104 @@
+/* Header */
+
+  /* Site Header */
+	.sitename {
+		display: flex;
+		line-height: 1;
+		background: #eee;
+		color: #666;
+		position: relative; }
+	.sitename a {
+		display: flex;
+		text-decoration: none;
+		color: inherit; }
+	.sitename::after {
+		content: "";
+		position: absolute;
+		height: 2px;
+		bottom: -2px;
+		left: 0; right: 0;
+		z-index: 1;
+		box-shadow: 0 0 0.5em #999; }
+	.sitename > * {
+		margin: 0;
+		padding: 0.2em; 
+		display: inline-block;
+		display: table-cell;
+		line-height: normal;
+		vertical-align: middle;
+		font-weight: normal;
+		text-transform: none; }
+
+	/* W3C Logo */
+	.sitename > a.w3c > img {
+		display: block;
+		align-self: center;
+		padding: 0.3em 0.4em;
+		height: 1.3em; }
+	.sitename > a.w3c {
+		background: #005A9C;
+		color: white;
+		vertical-align: middle; }
+	/* Cascading Style Sheets */
+	.sitename > .csswg {
+		display: flex;
+		align-items: center;
+		margin: 0 0.8em; }
+
+	/* Section Navigation */
+	nav.site {
+		color: gray;
+		margin: 0.937em;
+		font-size: 0.8em;
+		line-height: 1.875;
+		text-align: center; }
+	nav.site > ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none; }
+	nav.site > ul > li {
+		display: inline-block; }
+	nav.site > ul a {
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 0.275em 1em 0.275em 1em; }
+	nav.site > ul > li.current a {
+		background: #eee;
+		margin-top: -1em;
+		border-bottom-right-radius: 0.25em;
+		border-bottom-left-radius: 0.25em; }
+
+	/* Search Box */
+	nav.site > form {
+		text-align: center;
+		margin: 0.5em; }
+
+	/* Very Narrow Screen header styling */
+	@media screen and (max-width: 20em) {
+		.header h1, header h1,
+		.header h2, header h2 {
+			display: block;
+			padding-bottom: 0.2em;
+			margin-left: 90px;
+		}
+		.header h1 img, header h1 img {
+			float: left;
+			margin-bottom: 0.2em;
+		} }
+
+	/* Widescreen header styling */
+	@media screen and (min-width: 900px) and (min-width: 60em) {
+		header > nav > ul {
+			float: left;
+			padding: 0;
+			margin: 0 0 0.937em;
+			padding-left: 7.5em;
+			text-align: left;
+		}
+	
+		header > nav > form {
+			float: right;
+			margin: 0.275em 0 0.937em;;
+			display: inline;
+		} }
+

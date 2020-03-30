@@ -1,0 +1,79 @@
+/* General Typography */
+
+	html {
+		font-family: "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
+		line-height: 1.5; }
+
+	aside,
+	.toc {
+		font-size: 0.9em;
+		line-height: 1.35; }
+
+	section {
+		margin: 0 2% 3em; }
+
+	h1, .sitename {
+		font-size: 1.5em;
+		font-weight: normal; }
+
+	h1, h2, h3, h4, h5, h6, caption, .sitename {
+		font-family: Georgia, serif;
+		letter-spacing: 1px;
+		line-height: 1; }
+
+	h1, h2, h3 {
+		text-transform: uppercase; }
+
+	p, ul, ol, dd, pre {
+		margin: 0 0 1.5em 0; }
+
+	li, dd {
+		margin-left: 2em; }
+	/* undo top-level list margin for navigation lists */
+	nav li {
+		margin-left: 0;	}
+	nav li li {
+		margin-left: 2em; }
+
+	dt {
+		font-weight: bold;
+		margin: 0.4em 0 0.2em; }
+
+/* Links */
+
+	a[href] {
+		color: #0C3D5F;
+		text-decoration: none; }
+	a[href]:hover, a[href]:focus {
+		text-decoration: underline; }
+	a > img {
+		border: none; }
+	h1 > a, h2 > a {
+		color: inherit; }
+
+/* Time Stamps  */
+
+	time {
+		text-transform: uppercase;
+		font-size: 0.8em; }
+
+/* Asides */
+
+	aside {
+		background: #C1D2E7;
+		color: #444;
+		border-radius: 0.5em;
+		font-size: 0.9em;
+		padding: 1px 0; }
+	aside > * {
+		margin-left: 8%;
+		margin-right: 8%; }
+
+	@media screen and (min-width: 600px) and (min-width: 40em) {
+		aside {
+			float: right;
+			width: 40%;
+			margin-left: 1.5%
+		} }
+	@media screen and (min-width: 900px) and (min-width: 60em) {
+		aside { width: 33%; } }

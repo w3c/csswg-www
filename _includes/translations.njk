@@ -1,0 +1,11 @@
+  <nav id="translations">
+    <h2>Translations</h2>
+    {%- for lgg in site.languages %}
+      {%- set translatedUrl = "/" + lgg.code + "/" %} 
+      <a href="{{ translatedUrl }}">{{ lgg.label }}</a>
+    {%- endfor %}
+    <footer>
+      <a id="about-translation"
+         href="http://www.w3.org/Style/CSS/translating">More about translations</a>
+    </footer>
+  </nav>

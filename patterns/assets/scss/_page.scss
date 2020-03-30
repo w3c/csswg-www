@@ -1,0 +1,39 @@
+/* Page Scheme */
+
+	html {
+		min-height: 100%;
+		max-width: 70em;
+		margin: 0 auto;
+		color: #777;
+		background: #DBE2E6;
+		background: linear-gradient(45deg,
+		                            hsla(300, 0%, 0%, 0.08) 25%,
+		                            transparent 25%,
+		                            transparent 50%,
+		                            hsla(300, 0%, 0%, 0.04) 50%,
+		                            hsla(300, 0%, 0%, 0.04) 75%,
+		                            transparent 75%,
+		                            transparent) repeat,
+		            linear-gradient(-45deg,
+		                            hsla(300, 0%, 0%, 0.04) 25%,
+		                            transparent 25%,
+		                            transparent 50%,
+		                            hsla(300, 0%, 0%, 0.04) 50%,
+		                            hsla(300, 0%, 0%, 0.04) 75%,
+		                            transparent 75%,
+		                            transparent) repeat,
+		            linear-gradient(#025A9A, #fff) repeat-x,
+		            #fff;															  
+		background-size: 50% 50%; }
+
+	body {
+		margin: 0.5em; }
+
+	div.page {
+		margin: 0.5em 0 2em;
+		background: #fff;
+		box-shadow: 0 0 1em #0c3d5f; }
+
+	main {
+		clear: both;
+		margin: 1em 1em 3em; }

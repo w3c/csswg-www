@@ -1,0 +1,15 @@
+/* Top Page Navigation */
+
+	nav.page {
+		color: #eee;
+		text-align: right;
+		text-align: end; }
+	nav.page > a {
+		color: #eee;
+		margin: 0 0.5em; }
+	nav.page > a:not(:hover):not(:focus) {
+		opacity: 0.5; }
+	.skip-to-content::after {
+		content: " 🠺"; }
+	.skip-to-translations::after {
+		content: " 🌐"; }
