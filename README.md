@@ -55,3 +55,52 @@ You can use Markdown. You can mix Markdown and HTML. The parser is nobbled so yo
 	* `l10n` is where the localization files live
 * `patterns` is where the CSS and JS lives
 	* `public` is where built files live
+
+## Content Planning
+
+
+* Goal: Make the CSSWG website useful to
+  * CSSWG Members and regular contributors
+  * People who want to get involved
+  * People who want to read and understand our specs
+  * People who need to follow the CSSWG's progress
+  * People who are lost (redirect to MDN, etc.)
+
+* Useful materials we currently have, to reuse/adapt:
+  * http://www.w3.org/Style/CSS/current-work
+  * http://fantasai.inkedblade.net/weblog/2011/inside-csswg/
+  * http://www.w3.org/Style/CSS/read
+  * https://rachelandrew.co.uk/archives/2017/04/24/refer-to-the-spec-what-is-all-that-stuff-at-the-top-of-the-spec/
+  * https://rachelandrew.co.uk/archives/2017/05/01/whats-happening-in-css/
+  * stuff on https://wiki.csswg.org/
+
+### Content Outline
+
+*   About CSSWG
+    * Who we are
+    * What we do
+    * How we operate
+    * Where to find us (IRC, www-style, GH, blog, wiki, etc.)
+    * New Member Guide
+
+*   Learn CSS
+    * What is CSS
+    * specs vs tutorials
+    * where to learn (not here)
+    * index of CSS conferences?
+    * localized, not just translated
+
+*   Read Our Specs
+    * How to read specs
+    * How CSS specs are organized
+    * List of specs -> current-work
+    * About spec status , advancement
+    * Finding test suites
+
+*   Get Involved
+    * Process
+    * Nature of discussions, decisions
+    * How to report problems
+    * Relationship to browsers (we don't control them) + how to file bugs
+    * Testing 
+  
