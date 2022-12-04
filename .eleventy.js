@@ -2,9 +2,12 @@ module.exports = function (eleventyConfig) {
     // Custom Markdown config
     let markdownIt = require("markdown-it");
     let options = {
-        html: true
+        html: true,
     };
-    eleventyConfig.setLibrary("md", markdownIt(options).disable('code'));
+
+    // Disables the behvaior of putting indented content in a pre block
+    // Similar to https://tabatkins.github.io/bikeshed/#markdown
+    eleventyConfig.setLibrary("md", markdownIt(options).disable("code"));
 
     eleventyConfig.addPassthroughCopy("_content/assets");
 
