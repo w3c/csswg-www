@@ -1,13 +1,11 @@
 const gulp  = require("gulp");
-const sass  = require('gulp-sass');
+const sass  = require('gulp-sass')(require('node-sass'));
 const fractal = require('./fractal.js');
 const logger = fractal.cli.console;
 const sassGlob = require('gulp-sass-glob');
 const merge = require('merge-stream');
 const concat = require('gulp-concat');
 const terser = require('gulp-terser');
-
-sass.compiler = require('node-sass');
 
 /*
   generate the css with sass
