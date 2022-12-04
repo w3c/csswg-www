@@ -1,5 +1,5 @@
 ---
-permalink: "/get-involved/browsers.en.html"
+permalink: "/get-involved/browsers.html"
 locale: "en"
 section: "get-involved"
 layout: main.njk
@@ -24,7 +24,7 @@ Given that adding new features is a case of priorities it can be helpful for the
 
 ## Reporting bugs to browsers
 
-If some CSS is not working at all in a certain browser then the most likely situation is that the feature isn't implemented yet. Check [CanIUse](https://caniuse.com) or the support information at the bottom of property pages on MDN (e.g. this is the page for [::marker]( https://developer.mozilla.org/en-US/docs/Web/CSS/::marker )). These should tell you if a feature is implemented or not.
+If some CSS is not working at all in a certain browser then the most likely situation is that the feature isn't implemented yet. Check [CanIUse](https://caniuse.com) or the support information at the bottom of property pages on MDN (e.g. this is the page for [::marker](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)). These should tell you if a feature is implemented or not.
 
 If a feature is working in a different way between two browsers then you may have found a bug in the implementation. It is very helpful if these bugs are reported to the browser in question.
 
@@ -34,13 +34,13 @@ Particularly when using very new CSS, it might be that your issue has already be
 
 ### Create a reduced test case
 
-One of the most useful skills for developers is to be able to create a reduced case of any issue, as explained in this article on [Test Case Reduction]( https://webkit.org/test-case-reduction/ ). Creating a reduced test case means removing everything from your example that doesn't change the buggy behavior.Any JavaScript, any CSS, any HTML elements. Ideally you can go right down to just the component which is causing a problem. It can be useful to create this in an online tool such as CodePen or jsFiddle, as this will then be easy to share.
+One of the most useful skills for developers is to be able to create a reduced case of any issue, as explained in this article on [Test Case Reduction](https://webkit.org/test-case-reduction/). Creating a reduced test case means removing everything from your example that doesn't change the buggy behavior.Any JavaScript, any CSS, any HTML elements. Ideally you can go right down to just the component which is causing a problem. It can be useful to create this in an online tool such as CodePen or jsFiddle, as this will then be easy to share.
 
 At this point you should have a reasonable idea of what is causing the problem. You may have even discovered it wasn't a browser bug at all, but instead something you were doing. For example, incorrect HTML or CSS might be interpreted differently by two browsers. Fix the code and the issue goes away. If you do think you have a bug, you can now see if it has already been reported.
 
 ### Browser bug trackers
 
-You can find the various browser bug trackers at the links below, there is also the [Browser Bug Searcher]( https://browser-issue-tracker-search.appspot.com/ ) site, which searches out issues from all browsers at once.
+You can find the various browser bug trackers at the links below, there is also the [Browser Bug Searcher](https://browser-issue-tracker-search.appspot.com/) site, which searches out issues from all browsers at once.
 
 - [Chrome](https://bugs.chromium.org/p/chromium/issues/list)
 - [Firefox](https://bugzilla.mozilla.org/)
@@ -57,5 +57,5 @@ It should go without saying that when reporting issues you should be polite. Bro
 
 ### Further reading
 
-- [How to file a good bug]( https://developers.google.com/web/feedback/file-a-bug )
-- [Help The Community! Report Browser Bugs!]( https://www.smashingmagazine.com/2011/09/help-the-community-report-browser-bugs/ ) - a 2011 post so the links to browsers and so on are outdated, but Lea has some excellent advice in terms of reducing and reporting issues.
+- [How to file a good bug](https://developers.google.com/web/feedback/file-a-bug)
+- [Help The Community! Report Browser Bugs!](https://www.smashingmagazine.com/2011/09/help-the-community-report-browser-bugs/) - a 2011 post so the links to browsers and so on are outdated, but Lea has some excellent advice in terms of reducing and reporting issues.

@@ -1,5 +1,5 @@
 ---
-permalink: "/index.en.html"
+permalink: "/index.html"
 locale: "en"
 section: "home"
 layout: home.njk

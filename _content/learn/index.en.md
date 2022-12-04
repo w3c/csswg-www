@@ -1,5 +1,5 @@
 ---
-permalink: "/learn/index.en.html"
+permalink: "/learn/index.html"
 locale: "en"
 section: "learn"
 layout: main.njk

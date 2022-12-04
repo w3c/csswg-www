@@ -1,5 +1,5 @@
 ---
-permalink: "/about/what.en.html"
+permalink: "/about/what.html"
 locale: "en"
 section: "about"
 layout: main.njk
