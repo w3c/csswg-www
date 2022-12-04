@@ -2,9 +2,9 @@ module.exports = function (eleventyConfig) {
     // Custom Markdown config
     let markdownIt = require("markdown-it");
     let options = {
-        html: true,
+        html: true
     };
-    eleventyConfig.setLibrary("md", markdownIt(options).disable("code"));
+    eleventyConfig.setLibrary("md", markdownIt(options).disable('code'));
 
     eleventyConfig.addPassthroughCopy("_content/assets");
 
