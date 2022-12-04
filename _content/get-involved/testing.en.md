@@ -1,5 +1,5 @@
 ---
-permalink: "/get-involved/testing.en.html"
+permalink: "/get-involved/testing.html"
 locale: "en"
 section: "get-involved"
 layout: main.njk

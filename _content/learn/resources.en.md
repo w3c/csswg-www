@@ -1,5 +1,5 @@
 ---
-permalink: "/learn/resources.en.html"
+permalink: "/learn/resources.html"
 locale: "en"
 section: "learn"
 layout: main.njk
@@ -14,7 +14,7 @@ If you want to learn how to use CSS, then this section will point you to some he
 
 For the complete beginner we would recommend looking at the [Learn CSS material on MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS). This will teach you all of the basics of the language, and help you to explore the rest of MDN, where all of the web platform is documented.
 
-If you prefer books then a well recommended book for beginning web developers is [Learning Web Design]( http://shop.oreilly.com/product/0636920051626.do), by Jen Robbins.
+If you prefer books then a well recommended book for beginning web developers is [Learning Web Design](http://shop.oreilly.com/product/0636920051626.do), by Jen Robbins.
 
 ## Sites
 
