@@ -1,0 +1,17 @@
+name: learn-github-actions
+run-name: ${{ github.actor }} is building the website
+on: [push]
+jobs:
+    build-and-deploy-site:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: "14"
+            - run: npm install
+            - run: npm run build
+            - run: cp -r _site csswg-www.inkedblade.net
+            # Note: this doesn't delete old files from the destination directory
+            # We should use a more robust command for copying to prod.
+            - run: sshpass -p ${{ secrets.SCP_PASSWORD }} scp -o StrictHostKeyChecking=no -r csswg-www.inkedblade.net csswg_automatic@inkedblade.net:~/
